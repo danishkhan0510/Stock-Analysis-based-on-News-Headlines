@@ -1,2 +1,3 @@
 # Stock-Analysis-based-on-News-Headlines
-The dataset contains top 25 headlines for each day and a label of 0 or 1 stating if the stock index went down or up. We will try to predict the status of stock index given the top headlines.
+The dataset contains top 25 headlines for each day and a label of 0 or 1 stating if the stock index went down or up. We will try to predict the status of stock index given the top headlines.  
+We start by removing all punctuations and coverting all text to lower case. We append all the headlines together into a single string. We use count vectoriser to get the bag of words representation of the sentences. We use Random Forest Classifier for the sentiment prediction. In the end we check our model's performance with the confusion matrix, accuracy score and classification report.
